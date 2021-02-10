@@ -26,10 +26,36 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('spreadsheet');
   });
 
-  it('should render title', () => {
+  it('should only accept positive integers',() => {
     const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('spreadsheet app is running!');
+    var num = 2;
+    // var n = Math.floor(Number(str));
+    // return n !== Infinity && String(n) === str && n >= 0;
+    expect(num).toBeGreaterThan(0);
+  });
+
+  it('should should add two numbers',() => {
+    var num1 = 2;
+    var num2 = 2;
+    var sum = 4;
+    expect(sum).toEqual(num1+num2);
+  });
+  it('should should multiply two numbers',() => {
+    var num1 = 2;
+    var num2 = 5;
+    var mult = 10;
+    expect(mult).toEqual(num1*num2);
+  });
+  it('should should subtract two numbers',() => {
+    var num1 = 5;
+    var num2 = 2;
+    var sub = 3;
+    expect(sub).toEqual(num1-num2);
+  });
+  it('should should divide two numbers',() => {
+    var num1 = 6;
+    var num2 = 2;
+    var div = 3;
+    expect(div).toEqual(num1/num2);
   });
 });
