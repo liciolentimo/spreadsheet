@@ -1,4 +1,4 @@
-![Build Status](https://travis-ci.com/liciolentimo/spreadsheet.svg?branch=main)
+![Build Status](https://travis-ci.com/liciolentimo/spreadsheet.svg?branch=main)  [![Coverage Status](https://coveralls.io/repos/github/liciolentimo/spreadsheet/badge.svg?branch=main)](https://coveralls.io/github/liciolentimo/spreadsheet?branch=main)
 
 # Spreadsheet
 
