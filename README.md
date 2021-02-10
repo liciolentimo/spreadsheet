@@ -1,4 +1,4 @@
-![Build Status](https://travis-ci.com/liciolentimo/spreadsheet.svg?branch=main)](https://travis-ci.com/liciolentimo/spreadsheet) 
+![Build Status](https://travis-ci.com/liciolentimo/spreadsheet.svg?branch=main)
 
 # Spreadsheet
 
