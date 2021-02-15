@@ -1,16 +1,20 @@
-![Build Status](https://travis-ci.com/liciolentimo/spreadsheet.svg?branch=main)  [![Coverage Status](https://coveralls.io/repos/github/liciolentimo/spreadsheet/badge.svg?branch=main)](https://coveralls.io/github/liciolentimo/spreadsheet?branch=main)
+![Build Status](https://travis-ci.com/liciolentimo/spreadsheet.svg?branch=main)  
 
 # Spreadsheet
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.4.
 
+## Installation
+- `git clone https://github.com/liciolentimo/spreadsheet.git`
+- Run `npm install`
+
+## Using the App
+Use the first row as a working demo. `Press Enter` upon filling in the values from the first and second input fields.
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
@@ -24,6 +28,3 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
