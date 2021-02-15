@@ -1,64 +1,4 @@
 import { Component } from '@angular/core';
-import {MatTableDataSource} from '@angular/material/table';
-
-export let SheetHeader = [
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        '],
-  ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ']
-];
-
-
 
 @Component({
   selector: 'app-root',
@@ -67,24 +7,32 @@ export let SheetHeader = [
 })
 
 
-
 export class AppComponent {
   title = 'spreadsheet'; 
-  displayedColumns: string[] = [' ', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
-dataSource = new MatTableDataSource(SheetHeader);
 
-editor = {
-  //use to change the switch to input
-  editPointer: {
-    col: -1,
-    row: -1,
-  },
-};
-switchToInput(rindex, cindex) {
-  this.editor.editPointer.col = cindex;
-  this.editor.editPointer.row = rindex;
+  firstNumber : string;
+  lastNumber : string;
+  firstNumber2 : string;
+  lastNumber2 : string;
+  firstNumber3 : string;
+  lastNumber3 : string;
+  firstNumber4 : string;
+  lastNumber4 : string;
+  result : number;
+  result2 : number;
+  result3 : number;
+  result4 : number;
+  addNumber(){
+    this.result = parseInt(this.firstNumber) + parseInt(this.lastNumber);
+  }
+  subtractNumber(){
+    this.result2 = parseInt(this.firstNumber2) - parseInt(this.lastNumber2);
+  }
+  multiplyNumber(){
+    this.result3 = parseInt(this.firstNumber3) * parseInt(this.lastNumber3);
+  }
+  divideNumber(){
+    this.result4 = parseInt(this.firstNumber4) / parseInt(this.lastNumber4);
+  }
+
 }
-
-constructor() {}
-}
-
