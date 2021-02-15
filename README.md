@@ -11,6 +11,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Using the App
 Use the first row as a working demo. `Press Enter` upon filling in the values from the first and second input fields.
 
+![demo](https://raw.githubusercontent.com/liciolentimo/spreadsheet/blob/main/demo.gif)
+
 
 ## Development server
 
